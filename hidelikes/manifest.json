@@ -3,7 +3,7 @@
   "name": "Hide Likes",
   "version": "1.0",
 
-  "description": "Adds a red border to all webpages matching mozilla.org.",
+  "description": "Hides the likes and dislikes on Youtube videos.",
 
   "icons": {
     "48": "icons/border-48.png"
@@ -11,7 +11,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.mozilla.org/*"],
+      "matches": ["*://*.youtube.com/*"],
       "js": ["hidelikes.js"]
     }
   ]

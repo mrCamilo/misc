@@ -1,1 +1,1 @@
-document.body.style.border = "20px solid red";
+document.getElementById("menu-container").style.display = "none";
