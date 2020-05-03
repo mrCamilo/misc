@@ -6,7 +6,7 @@
   "description": "Hides the likes and dislikes on Youtube videos.",
 
   "icons": {
-    "48": "icons/border-48.png"
+    "49": "icons/border-49.png"
   },
 
   "content_scripts": [
