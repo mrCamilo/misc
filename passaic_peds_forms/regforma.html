@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<div class="text-center">
+  <img src="./img/img.png">
+  <h1>PASSAIC PEDIATRICS PA</h1>
+  <h2>Registro de Informacion del Paciente</h2>
+</div>
+
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="fname">Nombre del paciente</label>
+      <input type="text" class="form-control" id="fname" aria-describedby="name" placeholder="Nombre">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="lname">Appelido del paciente</label>
+      <input type="text" class="form-control" id="lname" aria-describedby="name" placeholder="Appelido">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="age">Edad</label>
+      <input type="text" class="form-control" id="age" placeholder="Edad del paciente">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="sex">Sexo</label>
+      <select class="form-control" id="sex">
+        <option>F</option>
+        <option>M</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="dob">D.O.B.</label>
+      <input type="date" class="form-control" id="dob" placeholder="Fecha de Nacimiento">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="address">Direccion</label>
+      <input type="text" class="form-control" id="address" placeholder="Direccion">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="citystate">Ciudad y Estado</label>
+      <input type="text" class="form-control" id="citystate" placeholder="Ciudad y Estado"></div>
+  </div>
+
+  <div class="form-row justify-content-center">
+    <div class="form-group">
+      <label for="zip">Codigo Postal</label>
+      <input type="zip" class="form-control" id="zip" placeholder="Codigo Postal">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Email">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="phone1">Telefono principal</label>
+      <input type="phone" class="form-control" id="phone" placeholder="Telefono principal">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="phone2">Telefono secundario</label>
+      <input type="phone" class="form-control" id="phone2" placeholder="Telefono secundario">
+    </div>
+  </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="mother">Nombre de la madre</label>
+      <input type="text" class="form-control" id="mother" placeholder="Nombre de la madre">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="motherdob">Fecha de Nacimiento</label>
+      <input type="date" class="form-control" id="motherdob" placeholder="Fecha de Nacimiento">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="motheradd">Direccion de la madre</label>
+      <input type="text" class="form-control" id="motheradd" placeholder="Direccion de la madre">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="father">Nombre del padre</label>
+      <input type="text" class="form-control" id="father" placeholder="Nombre del padre">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="motherdob">Fecha de Nacimiento</label>
+      <input type="date" class="form-control" id="fatherdob" placeholder="Fecha de Nacimiento">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="fatheradd">Direccion del padre</label>
+      <input type="text" class="form-control" id="fatheradd" placeholder="Direccion del padre">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="econtact">Contacto de emergencia #1</label>
+      <input type="text" class="form-control" id="econtact" placeholder="Nombre">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="econtactrel">Relacion</label>
+      <input type="phone" class="form-control" id="econtact" placeholder="Relacion">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="econtactphone">Numero de Telefono</label>
+      <input type="phone" class="form-control" id="econtactphone" placeholder="Numero de Telefono">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="econtact2">Contacto de emergencia #2</label>
+      <input type="text" class="form-control" id="econtact2" placeholder="Nombre">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="econtactrel2">Relacion</label>
+      <input type="phone" class="form-control" id="econtactrel2" placeholder="Relacion">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="econtactphone2">Numero de Telefono</label>
+      <input type="phone" class="form-control" id="econtactphone2" placeholder="Numero de Telefono">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <label for="econtact2"> Informacion de Referimiento: Como se entero de nosotros</label>
+    <input type="text" class="form-control" id="econtact2">
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="primary">Seguro Primario</label>
+      <input type="text" class="form-control" id="primary" placeholder="Seguro primario">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="secondary">Seguro secundario</label>
+      <input type="text" class="form-control" id="secondary" placeholder="Seguro secundario">
+    </div>
+  </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="idnum">ID#</label>
+      <input type="text" class="form-control" id="idnum" placeholder="Primary">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="groupnum">Group</label>
+      <input type="text" class="form-control" id="groupnum" placeholder="Primary">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="effectivedate">Effective Date</label>
+      <input type="text" class="form-control" id="effectivedate" placeholder="Primary">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="econtactphone">Card holder Name</label>
+      <input type="text" class="form-control" id="cardholder" placeholder="Primary">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="idnum2">ID#</label>
+      <input type="text" class="form-control" id="idnum2" placeholder="Secondary">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="groupnum2">Group</label>
+      <input type="text" class="form-control" id="groupnum2" placeholder="Secondary">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="effectivedate2">Effective Date</label>
+      <input type="text" class="form-control" id="effectivedate2" placeholder="Secondary">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="econtactphone2">Card holder Name</label>
+      <input type="text" class="form-control" id="cardholder2" placeholder="Secondary">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="pharmacy">Nombre de farmacia</label>
+      <input type="phone" class="form-control" id="pharmacy" placeholder="Pharmacy">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="pharmnum">Telefono de farmacia</label>
+      <input type="phone" class="form-control" id="pharmnum" placeholder="Phone">
+    </div>
+  </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="signature">Firma</label>
+      <input type="signature" class="form-control" id="signature" placeholder="Esignature">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="date">Fecha</label>
+      <input type="date" class="form-control" id="date" placeholder="M/D/Y">
+    </div>
+  </div>
+  </div>
+
+
+  <div class="text-center">
+    <button type="button" class="btn btn-success">Submit</button>
+  </div>
+</form>
+
+</html>
