@@ -1,1 +1,1 @@
-Lots of things that aren't worth their own repo.
+Things that aren't worth their own repo.
