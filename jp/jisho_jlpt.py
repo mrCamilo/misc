@@ -3,11 +3,27 @@ import requests
 
 #prettify the API result 
 def prettify(a_list):
-    a_list[a_list.index('jlpt-n5')] = 'N5'
-    a_list[a_list.index('jlpt-n4')] = 'N4'
-    a_list[a_list.index('jlpt-n3')] = 'N3'
-    a_list[a_list.index('jlpt-n2')] = 'N2'
-    a_list[a_list.index('jlpt-n1')] = 'N1'
+    try:
+        a_list[a_list.index('jlpt-n5')] = 'n5'
+    except:
+        pass
+    try:
+        a_list[a_list.index('jlpt-n4')] = 'n4'
+    except:
+        pass
+    try:
+        a_list[a_list.index('jlpt-n3')] = 'n3'
+    except:
+        pass
+    try:
+        a_list[a_list.index('jlpt-n2')] = 'n2'
+    except:
+        pass
+    try:
+        a_list[a_list.index('jlpt-n1')] = 'n1'
+    except:
+        pass
+
     return a_list
 
 print('Enter \'q\' to quit')
