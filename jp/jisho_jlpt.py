@@ -11,7 +11,9 @@ r = requests.get(url)
 response = r.json() #store response in a variable
 dic_search = response['data']
 my_dict = dic_search[0] #just take jlpt of 1st word
-jlpt_dict = my_dict['jlpt']
+jlpt_dict = my_dict['jlpt'] #filters out 1st word data for just JLPT level
 
-print(f"JLPT Level: {jlpt_dict}")
+#format jlpt_dict to make it look better
+
+print(jlpt_dict)
 
