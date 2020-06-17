@@ -1,11 +1,19 @@
 import React from "react"
 
-function MyForm() {
+class MyForm extends React.Component {
+   constructor(props) {
+	   super (props)
+   }
+
+
+   render() {	
    return (
-	<div>
-	    <h3>Is the form working?</h3>
-	</div>
-   )
+	<form>
+	    <p>Complain of aches or pains</p>
+	    <input type="text"/>
+	</form>
+      )
+   }
 }
 
 export default MyForm
