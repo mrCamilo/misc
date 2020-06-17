@@ -10,7 +10,11 @@ class MyForm extends React.Component {
    return (
 	<form>
 	    <p>Complain of aches or pains</p>
-	    <input type="text"/>
+	    
+	    <input className="divider" type="button" value="Never"/>
+	    <input type="button" value="Sometimes"/>
+	    <input type="button" value="Always"/>
+	    
 	</form>
       )
    }
