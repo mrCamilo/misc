@@ -2,11 +2,18 @@ import React from 'react'
 
 function Buttons() {
    return (
-       <div>
-           <input type="button" value = "Never"/>
-           <input type="button" value = "Sometimes"/>
-           <input type="button" value = "Always"/>
-       </div>
+	<div>
+	   <form>
+	       <input type = "radio" name="group" id = "never"/>
+	       <label for = "never">Never</label>
+	       <br/>
+	       <input type = "radio" name="group" id = "sometimes"/>
+	       <label for = "sometimes">Sometimes</label>
+	       <br/>
+	       <input type = "radio" name="group" id = "always"/>
+	       <label for = "always">Always</label>
+	   </form>
+	</div>
    )
 }
 
