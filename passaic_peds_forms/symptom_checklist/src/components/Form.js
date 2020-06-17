@@ -1,22 +1,24 @@
 import React from "react"
 
+import Questionnaire from './Questionnaire.js'
+import questionsData from '../questionsData.js'
 import Buttons from './Buttons'
 
-class MyForm extends React.Component {
-   constructor(props) {
-	   super (props)
-   }
+function MyForm() {
+    const questComponents = questionsData.map(x => {
+	return (
+	    <div>
+	        <Questionnaire question = {x.question} />
+	        <Buttons />
+	    </div>
+	)
+    })
 
-
-   render() {	
-   return (
-	<form>
-	    <p>Complain of aches or pains</p>
-	    <Buttons /> 
-	    
-	</form>
-      )
-   }
+    return (
+	<div>
+            {questComponents}
+	</div>
+    )
 }
 
 export default MyForm
