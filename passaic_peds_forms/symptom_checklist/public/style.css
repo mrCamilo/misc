@@ -4,3 +4,8 @@
 	display: inline-block;
 }
 
+label {
+	display: inline-block;
+	padding: 3px;
+	text-align: center;
+}
