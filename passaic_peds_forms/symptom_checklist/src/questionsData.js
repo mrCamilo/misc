@@ -17,7 +17,7 @@ const questionsData = [
     {
 	id: 4,
 	question: "Fidgety, unable to sit still",
-        category: ""
+        category: "attention"
     },
     {
 	id: 5,
@@ -30,128 +30,139 @@ const questionsData = [
     },
     {
 	id: 7,
-	question: "Less interested in school"
+	question: "Act as if driven by motor",
+	category: "attention"
     },
     {
 	id: 8,
-	question: "Act as if driven by motor"
+	question: "Daydream too much",
+	category: "attention"
     },
     {
 	id: 9,
-	question: "Daydream too much"
+	question: "Distract easily",
+	category: "attention"
     },
     {
 	id: 10,
-	question: "Distract easily"
-    },
-    {
-	id: 11,
 	question: "Are afraid of new situations"
     },
     {   
-	id: 12,
-	question: "Feel sad, unhappy"
+	id: 11,
+	question: "Feel sad, unhappy",
+	category: "internalizing"
     },
-    {   id: 13,
+    {   id: 12,
 	question: "Are irritable, angry"
     },
     {
-	id: 14,
-	question: "Feel hopeless"
+	id: 13,
+	question: "Feel hopeless",
+	category: "internalizing"
     },
     {
-        id: 15,
-        question: "Have trouble concentrating"
+        id: 14,
+        question: "Have trouble concentrating",
+	category: "attention"
     },
     {
-	id: 16,
+	id: 15,
 	question: "Less interested in friends"
     },
     {   
-	id: 17,
-	question: "Fight with other children"
+	id: 16,
+	question: "Fight with other children",
+	category: "externalizing"
     },
     {
-	id: 18,
+	id: 17,
 	question: "Absent from school"
     },
     {
-	id: 19,
+	id: 18,
 	question: "School grades dropping"
     },
     {
-	id: 20,
-	question: "Down on yourself"
+	id: 19,
+	question: "Down on yourself",
+	category: "internalizing"
     },
     {
-	id: 21,
+	id: 20,
 	question: "Visit doctor with doctor finding nothing wrong"
     },
     {
-	id: 22,
+	id: 21,
 	question: "Have trouble sleeping"
     },
     {
-	id: 23,
-	question: "Worry a lot"
+	id: 22,
+	question: "Worry a lot",
+	category: "internalizing"
     },
     {
-	id: 24,
+	id: 23,
 	question: "Want to be with parent more than before"
     },
     {
-	id: 25,
+	id: 24,
 	question: "Feel that you are bad"
     },
     {
-	id: 26,
+	id: 25,
 	question: "Take unnecessary risks"
     },
     {
-	id: 27,
+	id: 26,
 	question: "Get hurt frequently"
     },
     {
-	id: 28,
-	question: "Seem to be having less fun"
+	id: 27,
+	question: "Seem to be having less fun",
+	category: "internalizing"
     },
     {
-	id: 29,
+	id: 28,
 	question: "Act younger than children your age"
     },
     {
-	id: 30,
-        question: "Do not listen to rules"
+	id: 29,
+        question: "Do not listen to rules",
+	category: "externalizing"
     },
     {
-	id: 31,
+	id: 30,
 	question: "Do not show feelings"
     },
     {
-	id: 32,
-	question: "Do not understand other people's feelings"
+	id: 31,
+	question: "Do not understand other people's feelings",
+	category: "externalizing"
     },
     {
-	id: 33,
-	question: "Tease others"
+	id: 32,
+	question: "Tease others",
+	category: "externalizing"
     },
     {	
+	id: 33,
+	question: "Blame others for your troubles",
+	category: "externalizing"
+    },
+    {
 	id: 34,
-	question: "Blame others for your troubles"
+	question: "Take things that do not belong to you",
+    	category: "externalizing"
     },
     {
 	id: 35,
-	question: "Take things that do not belong to you"
+	question: "Refuse to share",
+	category: "externalizing"
     },
     {
 	id: 36,
-	question: "Refuse to share"
-    },
-    {
-	id: 37,
 	question: "Do you have any emotional or behavioral problems for which you need help?"
     }
 ]
-
 
 export default questionsData
