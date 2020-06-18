@@ -40,7 +40,7 @@ const questionsData = [
     },
     {
 	id: 9,
-	question: "Distract easily",
+	question: "Distracted easily",
 	category: "attention"
     },
     {
