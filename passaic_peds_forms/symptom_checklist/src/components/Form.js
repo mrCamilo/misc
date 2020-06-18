@@ -1,24 +1,29 @@
 import React from "react"
 
+import Header from './Header.js'
 import Questionnaire from './Questionnaire.js'
 import questionsData from '../questionsData.js'
 import Buttons from './Buttons'
+import Results from './Results'
 
-function MyForm() {
+
+function myForm() {
     const questComponents = questionsData.map(x => {
-	return (
-	    <div>
+        return (
+            <div>
 	        <Questionnaire question = {x.question} />
-	        <Buttons />
+		<Buttons/>
 	    </div>
 	)
     })
 
     return (
-	<div>
+        <form>
+            <Header/>
             {questComponents}
-	</div>
+            <Results/>
+	</form>
     )
 }
 
-export default MyForm
+export default myForm 

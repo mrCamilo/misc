@@ -1,10 +1,9 @@
-import React, {Component} from 'react'
-import selectedValue from './Buttons' 
+import React from 'react'
 
 function Results () {
         return(
             <div>
-	        <p>Score: {selectedValue}</p>
+	        <p>Score: </p>
 	        <p>Anxiety/Depression:  </p>
 	        <p>Externalizing: </p>
 	        <p>Internalizing: </p>
