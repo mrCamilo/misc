@@ -22,7 +22,7 @@ const questionsData = [
     {
 	id: 5,
 	question: "Have trouble with teacher",
-
+	category: ""
     },
     {
 	id: 6,

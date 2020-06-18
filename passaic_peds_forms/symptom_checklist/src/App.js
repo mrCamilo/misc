@@ -1,11 +1,11 @@
 import React from 'react';
 
-import MyForm from './components/Form.js'
+import MapQuestions from './components/MapQuestions.js'
 
 function App() {
   return (
 	<div>
-            <MyForm/>
+            <MapQuestions/>
 	</div>
   )
 }
