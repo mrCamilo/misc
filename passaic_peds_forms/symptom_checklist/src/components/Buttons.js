@@ -4,7 +4,8 @@ class Buttons extends React.Component {
     constructor(props) {
 	    super(props)
 	    this.state = {
-		selectedValue: 0 
+		selectedValue: 0,
+		totalScore: 0
 	    }
     
 	    this.handleChange = this.handleChange.bind(this)
@@ -19,7 +20,6 @@ class Buttons extends React.Component {
 
     render() {
         return (
-		<div>
 	    <form>
 	        <input type = "radio" name="group" value = {0} onChange={this.handleChange}/>
 	        <label for = "never">Never</label>
@@ -30,8 +30,6 @@ class Buttons extends React.Component {
 	        <input type = "radio" name="group" value = {2} onChange={this.handleChange}/>
 	        <label for = "always">Always</label>
 	    </form>
-		<p>{this.state.selectedValue}</p>
-		</div>
         )
     }  
 } 
