@@ -4,15 +4,20 @@ class Questionnaire extends Component {
     constructor() {
 	super()
 	this.state = {
-		q1: 0, 
-		q2:0
+		q1: 0, q2: 0, q3: 0, total: 0 
 	}
 	this.handleChange = this.handleChange.bind(this)
     }
 
     handleChange(event) {
         this.setState({
-	    [event.target.name]: event.target.value
+	    [event.target.name]: parseInt(event.target.value)
+	})
+
+	this.setState(prevState => {
+	    return {
+		total:  prevState.q1 + prevState.q2
+	    }
 	})
     }
 	
@@ -23,13 +28,11 @@ class Questionnaire extends Component {
 		<label><input type = "radio" name = "q1" value = {0} onChange={this.handleChange}/>Never</label><br/>
 	        <label><input type = "radio" name = "q1" value = {1} onChange={this.handleChange}/>Sometimes</label><br/>
 		<label><input type="radio" name = "q1" value = {2} onChange={this.handleChange}/>Always</label>
-		<p>{this.state.q1}</p><br/>
-	        
+
 		<p>Spend more time alone</p>
 		<label><input type = "radio" name = "q2" value = {0} onChange={this.handleChange}/> Never</label><br/>
 	        <label><input type = "radio" name = "q2" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
 		<label><input type="radio" name = "q2" value = {2} onChange={this.handleChange}/> Always</label>
-		<p>{this.state.q2}</p><br/>
 
 	        <p>Tire easily, little energy</p>
 		<label><input type = "radio" name = "3" value = {0}/> Never</label><br/>
@@ -196,6 +199,8 @@ class Questionnaire extends Component {
 	        <label><input type = "radio" name = "34" value = {0}/> Never</label><br/>
 	        <label><input type = "radio" name = "34" value = {1}/> Sometimes</label><br/>
 		<label><input type="radio" name = "34" value = {2}/> Always</label><br/>
+		<h3>Score: {this.state.total}</h3>
+		<button>Submit</button>
 		</form>
         )
    } 
