@@ -4,7 +4,8 @@ class Questionnaire extends Component {
     constructor() {
 	super()
 	this.state = {
-	    q1: "hey"
+		q1: 0, 
+		q2:0
 	}
 	this.handleChange = this.handleChange.bind(this)
     }
@@ -25,9 +26,10 @@ class Questionnaire extends Component {
 		<p>{this.state.q1}</p><br/>
 	        
 		<p>Spend more time alone</p>
-		<label><input type = "radio" name = "2" value = {0}/> Never</label><br/>
-	        <label><input type = "radio" name = "2" value = {1}/> Sometimes</label><br/>
-		<label><input type="radio" name = "2" value = {2}/> Always</label><br/>
+		<label><input type = "radio" name = "q2" value = {0} onChange={this.handleChange}/> Never</label><br/>
+	        <label><input type = "radio" name = "q2" value = {1} onChange={this.handleChange}/> Sometimes</label><br/>
+		<label><input type="radio" name = "q2" value = {2} onChange={this.handleChange}/> Always</label>
+		<p>{this.state.q2}</p><br/>
 
 	        <p>Tire easily, little energy</p>
 		<label><input type = "radio" name = "3" value = {0}/> Never</label><br/>
