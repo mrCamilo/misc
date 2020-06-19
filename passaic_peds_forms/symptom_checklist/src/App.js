@@ -1,11 +1,15 @@
 import React from 'react';
 
-import MapQuestions from './components/MapQuestions.js'
+import Header from './components/Header.js'
+import Questionnaire from './components/Questionnaire.js'
+import Results from './components/Results.js'
 
 function App() {
   return (
 	<div>
-            <MapQuestions/>
+	    <Header/>
+            <Questionnaire/>
+	    <Results/>
 	</div>
   )
 }

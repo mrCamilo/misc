@@ -3,13 +3,13 @@ import React from 'react'
 function Buttons() {
     return(
 	<form>
-	    <input type = "radio" value = "Never" name="group" value={0} />
+	    <input type = "radio" name="group" value={0} />
 	    <label>Never</label>
 	    <br/>
-	    <input type = "radio" value = "Sometimes" name="group" value ={1}/>
+	    <input type = "radio" name="group" value ={1}/>
 	    <label>Sometimes</label>
 	    <br/>
-	    <input type = "radio" value = "Always" name="group" value={2}/>
+	    <input type = "radio" name="group" value={2}/>
 	    <label>Always</label>
 	    <br/>
 	</form>
