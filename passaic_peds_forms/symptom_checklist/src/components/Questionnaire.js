@@ -4,16 +4,25 @@ class Questionnaire extends Component {
     constructor() {
 	super()
 	this.state = {
+	    q1: "hey"
 	}
+	this.handleChange = this.handleChange.bind(this)
     }
 
+    handleChange(event) {
+        this.setState({
+	    [event.target.name]: event.target.value
+	})
+    }
+	
     render() {
         return (
 	    <form>
 		<p>Complain of aches or pains</p>
-		<label><input type = "radio" name = "1" value = {0}/>Never</label><br/>
-	        <label><input type = "radio" name = "1" value = {1}/>Sometimes</label><br/>
-		<label><input type="radio" name = "1" value = {2}/>Always</label><br/>
+		<label><input type = "radio" name = "q1" value = {0} onChange={this.handleChange}/>Never</label><br/>
+	        <label><input type = "radio" name = "q1" value = {1} onChange={this.handleChange}/>Sometimes</label><br/>
+		<label><input type="radio" name = "q1" value = {2} onChange={this.handleChange}/>Always</label>
+		<p>{this.state.q1}</p><br/>
 	        
 		<p>Spend more time alone</p>
 		<label><input type = "radio" name = "2" value = {0}/> Never</label><br/>
@@ -32,7 +41,7 @@ class Questionnaire extends Component {
 
 		<p>Have trouble with teacher</p>
 		<label><input type = "radio" name = "4" value = {0}/> Never</label><br/>
-	        <label><input type = "radio" name = "" value = {1}/> Sometimes</label><br/>
+	        <label><input type = "radio" name = "4" value = {1}/> Sometimes</label><br/>
 		<label><input type="radio" name = "4" value = {2}/> Always</label><br/>
 
 		<p>Less interested in school</p>
